@@ -46,7 +46,7 @@ main {
 .products-column {
     flex-grow: 1;
     padding: 5rem 5rem;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 
@@ -84,6 +84,28 @@ main {
 
 .product-learn-more {
     background-color: var(--very-light-gray);
-    padding: 2rem;
-    border-radius: 10px;
+    height: 50px;
+    padding: 0 3rem;
+    border-radius: 25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    align-self: start;
+}
+
+.orange-bg a.product-learn-more:link, 
+.orange-bg a.product-learn-more:visited {
+    color: var(--bright-orange);
+}
+
+.dark-cyan-bg a.product-learn-more:link, 
+.dark-cyan-bg a.product-learn-more:visited {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan-bg a.product-learn-more:link, 
+.very-dark-cyan-bg a.product-learn-more:visited {
+    color: var(--very-dark-cyan);
 }
