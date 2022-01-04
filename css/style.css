@@ -41,6 +41,7 @@ main {
     margin: 0 auto;
 
     display: flex;
+    min-height: 480px;
 }
 
 .products-column {
@@ -82,11 +83,15 @@ main {
     margin-bottom: 2rem;
 }
 
+.product-description {
+    flex-grow: 1;
+}
+
 .product-learn-more {
     background-color: var(--very-light-gray);
-    height: 50px;
+    height: 40px;
     padding: 0 3rem;
-    border-radius: 25px;
+    border-radius: 20px;
     
     display: flex;
     justify-content: center;
