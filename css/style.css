@@ -92,6 +92,8 @@ main {
     height: 40px;
     padding: 0 3rem;
     border-radius: 20px;
+
+    border: 2px solid #fff;
     
     display: flex;
     justify-content: center;
@@ -113,4 +115,34 @@ main {
 .very-dark-cyan-bg a.product-learn-more:link, 
 .very-dark-cyan-bg a.product-learn-more:visited {
     color: var(--very-dark-cyan);
+}
+
+a.product-learn-more:hover {
+    background-color: transparent;
+}
+
+.orange-bg a.product-learn-more:hover,
+.dark-cyan-bg a.product-learn-more:hover,
+.very-dark-cyan-bg a.product-learn-more:hover
+ {
+    color: #fff;
+}
+
+@media (max-width: 760px) {
+    .products-container {
+        flex-direction: column;
+        margin: 5em auto;
+    }
+
+    .product-learn-more{
+        margin-top: 2em;
+    }
+
+    .products-column:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .products-column:last-child {
+        border-radius: 0 0 10px 10px;
+    }
 }
